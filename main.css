@@ -23,9 +23,13 @@ ul{
 	text-align: center;
 	border-left: none;
 }
+
+#list_inputText{
+	margin-left: 2rem;
+}
+
 h1 {
   padding: .5rem 1rem;
-  
   margin: .5rem .5rem -1.5rem .5rem;
   border-left: 0.1875rem solid #00BCD4;
   font-family: Helvetica, Arial, sans-serif;
@@ -45,14 +49,18 @@ h1 {
 
 .list {
   padding: .5rem 1rem;
-  
   margin: .5rem .5rem .5rem .5rem;
   border-left: 0.1875rem solid #00BCD4;
-
 }
 .list__item {
   margin: 0 0 .5rem 0;
 }
+input[type=radio]{
+	display: block;
+	margin-bottom: -17px;
+	position: float;
+}
+
 .label--radio {
   position: relative;
   margin: .5rem;
@@ -61,10 +69,10 @@ h1 {
   cursor: pointer;
 }
 .radio {
-  position: relative;
+  position: float;
+  display: block;
   margin: 0 1rem 0 0;
   cursor: pointer;
-    margin-bottom: 15px;
 }
 .radio:before {
   -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.45, 1.8, 0.5, 0.75);
@@ -111,14 +119,15 @@ h1 {
 
 h3 {
   color: #fff;
-  font-family: Raleway, Helvetica, sans-serif;
+  /*font-family: Raleway, Helvetica, sans-serif;*/
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 2rem;
   font-weight: 400;
 }
 
 p {
   color: #00BCD4;
-  font-family: Raleway, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -130,7 +139,7 @@ p {
   background: #00BCD4;
   border-radius: 8px;
   text-align: center;
-  margin: 200px auto 0 auto;
+  margin: 80px auto 0 auto;
   cursor: pointer;
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
@@ -156,7 +165,6 @@ p {
   top: -3px;
   opacity: 0;
 }
-
 .line {
   height: 3px;
   width: 20px;
