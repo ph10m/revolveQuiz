@@ -67,7 +67,16 @@ function shuffle(array) { //fisher-yates shuffle
 function generateLists(){
 	for (i=0; i<quiz.length; i++){
 		var num = String(i+1)
-		var list_text = "<header class='header'><p class='number'>#"+num+'<h1 id=Q'+num+"></h1></header><section class='content'><ul class='list' id=q_"+num+"></ul></section>";
+		var list_text =
+		"<header class='header'>\
+			<p class='number'>\
+				#"+num+'</p>\
+			<p id=Q'+num+"></p>\
+		</header>\
+		<section class='content'>\
+			<ul class='list' id=q_"+num+">\
+			</ul>\
+		</section>";
 		$(insertList).append(list_text);
 	}
 }
@@ -86,7 +95,15 @@ function setQuestions(){
 		for (n=0; n<shuffledQuiz[currentPos].answers.length;n++){
 			//sets a unique value for each answer, such as 0_0 or 0_1 for question 1 answer 1 and 2. Add it to radio value.
 			var radio_id = String(currentRadioGroup)+'_'+String(n)
-			var add_text = "<li class='list_item'><label class='label--radio'><input type='radio' class='radio' value="+radio_id+" name="+tempTag+"><div id=list_inputText>"+shuffledQuiz[currentPos].answers[n]+"</div></label></li>";
+			var add_text = 
+			"<li class='list_item'>\
+				<label class='label--radio'>\
+					<input type='radio' class='radio' value="+radio_id+" name="+tempTag+">\
+					<div id=list_inputText>\
+						"+shuffledQuiz[currentPos].answers[n]+"\
+					</div>\
+				</label>\
+			</li>";
 			$(tempTag).append(add_text);
 		}
 		currentPos++;
@@ -176,14 +193,9 @@ function hoverOff() {
 function active() {
   $(".button").on("click", function() {
 	submitAnswers();
-	$(this).fadeOut();
-
-
-	$('html, body').animate({scrollTop:120}, 400);//scroll speed
+	$(this).hide('slow');
+	$('html, body').animate({scrollTop:200}, 800);//scroll speed
 	showButton();
-	showTimer();
-
-
   });
 }
 function forceActive() {//green submit button when it's called from 0 errors in checkCorrect.
@@ -193,17 +205,9 @@ function forceActive() {//green submit button when it's called from 0 errors in 
 }
 function showButton(){
 	setTimeout(function() { 
-		   $(".button").show(); 
+		   $(".button").fadeIn('slow'); 
 	}, timerValue);
 }
-function showTimer(){
-	$(".wrapper").show();
-	setTimeout(function() { 
-		   $(".wrapper").hide(); 
-	}, timerValue);
-	
-}
-
 
 
 hover();
