@@ -16,7 +16,7 @@ var testOne = [
 	
 	{question: 'Hvilken spenning markerer skillet mellom elastisk og plastisk deformasjon?', answers: ['Flytespenning', 'Bøyespenning', 'Skjærspenning', 'Bruddspenning'], correct: 0},
 
-	{question: 'Hvis en 2000-watts vannkoker står på i 15 minutter. hvor mange kilowattimer har den da brukt? Svar i kWh', answers:['0.5', '1', '0.8', '1.5', '0.3', '1.3'], correct: 0},
+	{question: 'Hvis en 2000-watts vannkoker står på i 15 minutter. Hvor mange kilowattimer har den da brukt? Svar i kWh', answers:['0.5', '1', '0.8', '1.5', '0.3', '1.3'], correct: 0},
 	
 	{question: 'Hvilke av følgende er ikke et tegnsett?', answers:['IEEE', 'UTF-16', 'ASCII', 'UTF-8'], correct: 0},
 	
@@ -213,7 +213,6 @@ function forceActive() {//green submit button when it's called from 0 errors in 
 	 return $(this).addClass("active");
   });
 }
-
 hover();
 hoverOff();
 active();
