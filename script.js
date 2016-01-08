@@ -63,7 +63,7 @@ var testTwo = [
 	
 	{question: 'Hva er integranden av 1/(cos(x)^2)', answers: ['tan(x)', '1/(sin(x)^2)', 'cos(x)^2/sin(x)^2', 'sin(x)', '1/tan(x)', '1/sin(x)'], correct: 0}
 ];
-//{question: 'asd', answers:['1', '2', '3'], correct: 0},
+//{question: '', answers:['', '', '', '', '', '', '', '', ''], correct: 0},
 
 var quiz = testOne;
 
@@ -205,7 +205,8 @@ function hoverOff() {
 }
 function active() {
   $(".button").on("click", function() {
-	 submitAnswers();
+	document.getElementByClassName("button").disabled = true;
+	submitAnswers();
   });
 }
 function forceActive() {//green submit button when it's called from 0 errors in checkCorrect.
@@ -213,6 +214,9 @@ function forceActive() {//green submit button when it's called from 0 errors in 
 	 return $(this).addClass("active");
   });
 }
+
+
+
 hover();
 hoverOff();
 active();
