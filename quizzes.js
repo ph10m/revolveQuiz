@@ -167,5 +167,85 @@ var testFive = [
 ];
 
 
+//FSAE QUIZES
+var FSAEone = [
+	{question: 'When the impact attenuator assembly is bolted on to the frame, what is the minimum required grade and size of the bolts used?', answers:['M8 Grade 8.8', 'M8 Grade 9.8', 'M10 Grade 8.8', 'M10 Grade 9.8'], correct: 0},
+
+	{question: 'Which statements is not correct regarding the shoulder harness?', answers:['The shoulder harness mounting points must be between 178mm and 228mm apart', 'There must be a single release common to the lap belt and shoulder harness using a metal-to-metal quick release type latch', 'The shoulder harness must be the over-the-shoulder type. Only separate shoulder straps are permitted (i.e. “y”-type shoulder straps are not allowed). The “H”-type configuration is allowed.', 'When the HANS device is used by the driver, FIA certified 51 mm (2 inch) wide shoulder harnesses are allowed. Should a driver, at any time not utilize the HANS device, then 76 mm (3 inch) wide shoulder harnesses are required.', 'The shoulder harness must be mounted behind the driver to structure that meets the requirements of T3.4.1. However, it cannot be mounted to the Main Roll Hoop Bracing or attendant structure without additional bracing to prevent loads being transferred into the Main Hoop Bracing.', 'The strength of any shoulder harness bar bracing tubes must be proved in the relevant tab of the team’s SES submission.'], correct: 0},
+
+	{question: 'What is the amount of load attachment points between the monocoque and other primary structures  must be able to carry?', answers:['30 kN', '20 kN', '25 kN', '35 kN', '45kN', '40 kN', '50kN'], correct: 0},
+
+	{question: 'The baseline steel property for the Ultimate Strength (Su) that is used for calculations of bending and buckling strength in an SES may not be lower than:', answers:['365 MPa (52.9 ksi)', '200 GPa (29,000 ksi)', '300 MPa (43.5 ksi)', '180 MPa (26ksi)', '305 MPa (44.2 ksi)'], correct: 0},
+
+	{question: 'Which statement is not correct regarding the brake system?', answers:['“Brake-by-wire” acting on the rear wheels is allowed.', 'The car must be equipped with a braking system that acts on all four wheels and is operated by a single control.', 'A single brake acting on a limited-slip differential is acceptable.', 'EV ONLY: The first 90% of the brake pedal travel may be used to regenerate brake energy without actuating the hydraulic brake system. The remaining brake pedal travel must directly actuate the hydraulic brake system, but brake energy regeneration may remain active.', 'Unarmored plastic brake lines are prohibited', 'In side view no portion of the brake system that is mounted on the sprung part of the car can project below the lower surface of the frame or the monocoque, whichever is applicable.'], correct: 0},
+
+	{question: 'When positive locking mechanisms are required, what type of loctite is allowed to perform such a function?', answers:['None', 'Loctite 221', 'Loctite 275', 'Locite 223', 'Loctite 128068', 'Loctite 2701'], correct: 0},
+
+	{question: 'What is the maximum allowed height (above ground) for the rear wing?', answers:['1200mm', '900mm', '1000mm', '1100mm', '1300mm', '1400mm', '1500mm'], correct: 0},
+
+	{question: 'What is not true about the Accumulator Isolation Relays?', answers:['The fuse protecting the accumulator tractive system circuit must have a rating higher than the maximum switch off current of the isolation relays.', 'In every accumulator container at least two isolation relays must be installed', 'The accumulator isolation relays must open both (!) poles of the accumulator. If these relays are open, no HV may be present outside of the accumulator container.', 'The isolation relays must be of a “normally open” type.', 'The accumulator isolation relays must not contain mercury'], correct: 0},
+
+	{question: 'If the Tractive System (TS) voltage is 450VDC and both TS and GLV is present on the same circuit board, what is the required over surface spacing if opto-couplers rated for the respective maxium TS voltage (in this case 450VDC) is not used?', answers:['12.7mm', '14.5mm', '9.5mm', '7.62mm', '6.4mm', '5.56mm', '1.6mm'], correct: 0},
+
+	{question: 'If the Tractive System (TS) voltage is 123.5VDC and the shutdown circuit is opened/interrupted, the TS must drop to under 60VDC in less than', answers:['5 seconds', '1 second', '2 seconds', '3 seconds', '4 seconds', '6 seconds', '7 seconds', '8 seconds', '9 seconds', '10 seconds'], correct: 0},
+
+	{question: 'A part that may become electrically conductive and is within 100mm of any Tractive System or Grounded Low Voltage component must have a resistance to Grounded Low Voltage ground of:', answers:['5 Ohm', '100 mOhm', '300 mOhm', '1 Ohm', '10 Ohm'], correct: 0},
+
+	{question: 'Teams have to make sure that water cannot aggregate anywhere in the chassis. Enclosed monocoque structures needs at least 1 (one) hole with a minimum diameter of', answers:['No diameter specified', '5mm', '6mm', '4mm', '3mm', '2mm'], correct: 0}
+];
+
+
+var FSAEtwo = [
+	{question: 'What is not a allowed material for the brake pedal (regardless of production method)', answers:['CFRP', 'Steel', 'Aluminum', 'Titanium'], correct: 0},
+
+	{question: 'Which of these certifications are not accepted certifications for helmets at the competition?', answers:['British Standards Institution BS 6658-85 Type A', 'Snell K2000, K2005, K2010, M2000, M2005, M2010, SA2000, SA2005, SA2010', 'SFI 31.2A, SFI 31.1/2005', 'FIA 8860-2004, FIA 8860-2010'], correct: 0},
+
+	{question: 'Each team must have at least two 0.9kg fire extinguishers. What is not correct?', answers:['If accompanied by a track marshall, the second fire extinguisher does not need follow the vehicle', 'All extinguishers must be equipped with a manufacturer installed pressure/charge gauge', 'As a team option, commercially available on-board fire systems are encouraged as an alternative to the extinguisher that accompanies the vehicle', 'Except for the initial inspection, one extinguisher must readily be available in the team’s paddock area', 'The following are the minimum ratings, any of which are acceptable at any Formula SAE Series event: *USA, Canada & Brazil: 10BC or 1A 10BC*, *Europe: 34B or 5A 34B*, *Australia: 20BE or 1A 10BE*. Extinguishers of larger capacity (higher numerical ratings) are acceptable.', 'Hand held fire extinguishers are not permitted to be mounted on or in the car.'], correct: 0},
+
+	{question: 'Which of the following modifications is not specifically permitted without voiding Inspection Approval once the vehicle is approved to compete in the dynamic events?', answers:['Replacement of worn chains or sprockets', 'Adjustment of brake bias', 'Adjustment of mirrors', 'Replenishment of fluids', 'Substitution of the head restraint or seat insert for different drivers', 'Replacement of worn tires or brake pads'], correct: 0},
+
+	{question: 'The total energy absorbed by the impact attenuator must meet or exceed', answers:['7350 Joules', '7150 Joules', '7250 Joules', '7450 Joules'], correct: 0},
+
+	{question: 'What is the the allowable weight tolerance if the car weight changes during Dynamic Competition?', answers:['± 5.0kg', '± 4.0kg', '± 4.5kg', '± 4.7kg', '± 5.2kg', '± 5.5kg', '± 6.0kg'], correct: 0},
+
+	{question: 'Which of the following statements about the firewall is not correct?', answers:['The firewall must not contain any parts made of metal.', 'The firewall must be fire resistant according to UL94-V0, FAR25 or equivalent.', 'The thickness of second layer must be sufficient to prevent penetrating this layer with a 4 mm wide screwdriver and 250N of force.', 'The firewall must be grounded, if material is used that is or may become conductive.'], correct: 0},
+
+	{question: 'Which statement about the Tractive System Measurement points is not correct?', answers:['When max tractive system voltage is above 400VDC, the resistor value must be 10kR', 'The TSMPs must be protected by a non-conductive housing that can be opened without tools.', 'The TSMP must be protected from being touched with bare hands / fingers, once the housing is opened.', 'Each TSMP must be secured with a current limiting resistor', 'A 4mm shrouded banana jack must be used for the GLV ground measuring point; see the picture below for an example.'], correct: 0},
+
+	{question: 'What is not true when it comes to the master switches?', answers:["The GLVMS must be located on either side of the vehicle, in proximity to the Main Hoop, at the driver's shoulder height and be easily actuated from outside the car.", 'Each vehicle must have two Master Switches, the Grounded Low Voltage Master Switch (GLVMS) and the Tractive System Master Switch (TSMS)', 'The TSMS must be fitted with a "lockout/tagout" capability to prevent accidental activation of the tractive system. The electrical system officer must ensure that the TSMS is locked in the off position whenever work is done on the vehicle.', 'The GLVMS must completely disable power to the GLV System and must be direct acting, i.e. it cannot act through a relay or logic.', 'Both master switches must be of the rotary type, with a red, removable key.', 'The function of both switches must be clearly marked with “LV” and “HV”. A sticker with a red or black lightning bolt on a yellow background or red lightning bolt on a white background must additionally mark the Tractive System Master Switch.'], correct: 0},
+
+	{question: 'What is the response value of the test resistor defined for the Insulation Monitoring Device Test, in relation to the maximum tractive voltage?', answers:['500 Ohm/V', '250 Ohm/A', '1000 Ohm/V', '600 V/Ohm'], correct: 0}
+];
+
+var FSAEthree = [
+	{question: 'IC and EV scoring at FSA: which is true?', answers:['All events are scored completely separate', 'All events are run separately but scored together', 'At FSA, all vehicles are run and scored together', 'Only the dynamic events are scored separately'], correct: 0},
+
+	{question: 'What has to be brought to Technical inspection ?', answers:['Fire extinguishers', 'All of these', 'Vehicle stands', 'Smooth tread ("slick") tires'], correct: 0},
+
+	{question: 'When submitting the cost report, where do drawings and other supporting material go?', answers:['In a seperate file', 'Supporting material should not be submitted, just presented at the visual inspection', 'The supporting material is included in the standard cost tables', 'In the EBOM file next to the table describing the part'], correct: 0},
+
+	{question: 'What is the minimum weight of a rules compliant main hoop tube of 1m length (density of steel 7,85 g/cm^3)?', answers:['1361g', '1387g', '1443g', '1208g'], correct: 0},
+
+	{question: 'What is the minimum radius a main hoop tube can be bent (measured at tube centerline) if the outside diameter is 26mm ?', answers:['78mm', '26mm', 'not regulated', '52mm'], correct: 0},
+
+	{question: "The 'weight transfer' (in N) during cornering is dependent on:", answers:['Lateral acceleration, track width, CoG height, vehicle mass', 'Lateral acceleration, track width', 'Lateral acceleration, wheel base, CoG height', 'Lateral acceleration, track width, CoG height', 'Lateral acceleration, wheel base, CoG height, vehicle mass'], correct: 0},
+
+	{question: 'Your Brake pads are already worn out after the AutoX and you change to pads with a harder compound.', answers:['This is illegal', 'You have to redo the brake test (re-scrutineer)', 'You have to have the brake caliper fasteners checked by a scrutineer after changing.', 'This is allowed'], correct: 0},
+
+	{question: "Imagine the following scenario:  During the Endurance-race, your driver spins off track and unfortunately decides to re-enter the track immediately without paying attention to the track marshals and other cars on track. An oncoming vehicle t-bones your car right in the middle of the upper member of the side impact (we assume you have a steel spaceframe car).\
+	The member is 1000mm long, the Steel (E=210GPa) tubing used shall be 30x1,5mm round and the impact is represented by a force of 5kN. In the calculation, consider the tube to be supported on a pivots at each side (i.e. not clamped in!). How far will this tube deflect in the direction of your drivers' hip in this case? Hint: This is a beam on two supports problem.", answers:['36,276mm', '15,324mm', '22,485mm', '18,138mm'], correct: 0},
+
+	{question: 'Which of the following materials is acceptable as scatter shield for a chain with a maximum width of 38mm ?', answers:['120mm wide, 3mm thick, steel', '100mm wide, 5mm thick, steel', '120mm wide, 4mm thick, aluminum', '120mm wide, 2mm thick, steel'], correct: 0},
+
+	{question: 'Which of the following statements about the accumulator container is incorrect?', answers:['A sticker with an area of at least 700mm² and a red or black lightning bolt on yellow background or red lightning bolt on white background must be applied on every accumulator container', 'Each accumulator container must have a prominent indicator, such as an LED that will illuminate whenever a voltage greater than 60V DC is present at the vehicle side of the AIRs.', 'Every wire used in an accumulator container, no matter whether it is part of the GLV or tractive system, must be rated to the maximum tractive system voltage.', 'Every accumulator container must contain at least one fuse and at least two accumulator isolation relays.', 'The Accumulator containers and mounting systems are subject to approval of the Chief Technical Inspector or their representative'], correct: 0},
+
+	{question: 'What is correct about the grounding of the car?', answers:['All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 500 mOhms', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 5 Ohm to GLV system ground.', 'All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 300 mOhms', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 3 Ohm to GLV system ground.'], correct: 0},
+
+	{question: 'Concerning the driver egress, what is incorrect?', answers:['Hands in forward-facing driving position on the connected steering wheel and wearing the required driver equipment.', 'All drivers must be able to exit to the side of the vehicle in no more than 5 seconds.', 'Egress time begins with the driver in the fully seated position', 'Egress time will stop when the driver has both feet on the pavement.'], correct: 0},
+
+	{question: 'During the cost-event you get 38.3 points on your real case, and 37.6 on your visual inspection. Your car has a cost price of 32436.73$. This means you are the 7th most expensive car at the competition. The most expensive car costs 33623.96$ to produce, and the lowest costs only 22963.52$. Your team submitted the cost document 20.06.15, 13:00. How many points does your team score in total.', answers:['57,25', '77,25', '67,75', '62,75', '72,25', '55,75'], correct: 0},
+
+	{question: 'Which of the following forms does not have to be submitted?', answers:['BLC', 'FMEA', 'ESF', 'IAD', 'SES'], correct: 0}
+];
 
 

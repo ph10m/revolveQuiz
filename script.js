@@ -1,5 +1,6 @@
 var urlString = "url  ="+window.location.href;
 fetchLink = urlString.substring(urlString.length+1, urlString.indexOf('#'));
+
 var getQuiz = Number(fetchLink[1]);
 console.log('Found quiz: '+getQuiz);
 //{question: '', answers:['', '', '', '', '', '', '', '', ''], correct: 0},
@@ -32,6 +33,19 @@ switch(getQuiz){
 		get('bigLogo').innerHTML='Test Quiz 5';
 		quiz=testFive;
 		break;
+	case 6:
+		get('bigLogo').innerHTML='FSAE Quiz 1';
+		quiz=FSAEone;
+		break;
+	case 7:
+		get('bigLogo').innerHTML='FSAE Quiz 1';
+		quiz=FSAEtwo;
+		break;
+	case 8:
+		get('bigLogo').innerHTML='FSAE Quiz 1';
+		quiz=FSAEthree;
+		break;
+		
 	default:
 		alert('Found no valid quizzes, setting default to Test One');
 		get('bigLogo').innerHTML='Error mode: Test Quiz 1';
@@ -64,7 +78,7 @@ function shuffle(array) { //fisher-yates shuffle
     return array;
 }
 
-function generateLists(){
+function setQuestions(){
 	for (i=0; i<quiz.length; i++){
 		var num = String(i+1)
 		var list_text =
@@ -81,7 +95,7 @@ function generateLists(){
 	}
 }
 
-function setQuestions(){
+function setAnswers(){
 	//shuffle questions and answers
 	var currentPos= 0; //set current question
 	var currentRadioGroup = -1; //to handle unique radio-ids. Question 1 will have the id: 0_*insert answer number*, e.g: 0_1 refers to question 1 answer number 2. from 0 and up, to follow i and n values later.
@@ -147,10 +161,19 @@ function checkCorrect(answer_list, shuffledArray){
 
 function getRadioValue(name){
 	var radios = document.getElementsByName(name);
-	for (var i = 0, length = radios.length; i < length; i++) {
+	for (i;i<radios.length;i++){
 		if (radios[i].checked) {
+			console.log('found checked radio at :'+i);
 			return(radios[i].value);
 			// only one radio can be logically checked, don't check the rest
+			
+			/*
+			EDIT HERE: CAN WE DO SOMETHING WITH THE RADIOS[I] VALUE?
+			SO FAR WE HAVE THE i VALUE FOR WHICH QUESTION TO CHECK
+			AND NOW THE ANSWER VALUE. WE CAN THEN SAY THAT WE HAVE
+			1) THE SHUFFLED QUESTION (shuffledQuestion = shuffledArray[n].question;)
+			2) THE QUESTIONS' ANSWER (radioAns = shuffledQuestion.answers[radios[i]];)
+			*/
 			break;
 		}
 	}
@@ -171,8 +194,8 @@ function submitAnswers(){
 
 $(".wrapper").hide();
 var shuffledQuiz = shuffle(quiz);
-generateLists();
 setQuestions();
+setAnswers();
 var amountWrong;
 var currentQuestion;
 var currentAns;
@@ -193,6 +216,7 @@ function hoverOff() {
 function active() {
   $(".button").on("click", function() {
 	submitAnswers();
+	$('.radio').prop('checked',false);
 	$(this).hide('slow');
 	$('html, body').animate({scrollTop:200}, 800);//scroll speed
 	showButton();
