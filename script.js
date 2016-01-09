@@ -161,9 +161,9 @@ function checkCorrect(answer_list, shuffledArray){
 
 function getRadioValue(name){
 	var radios = document.getElementsByName(name);
-	for (i;i<radios.length;i++){
+	for (var i = 0, length = radios.length; i < length; i++){
 		if (radios[i].checked) {
-			console.log('found checked radio at :'+i);
+			console.log('getRadioValue :'+i);
 			return(radios[i].value);
 			// only one radio can be logically checked, don't check the rest
 			
@@ -202,6 +202,30 @@ var currentAns;
 
 var timerValue = 30000;
 
+
+
+
+
+//EXPERIMENTAL STUFF HERE
+function amountChecked(){
+	var selected = $(".radio:checked");
+    if(!selected.val()){
+        alert('No radio selected!')
+    }
+    else{
+        var selectedValue = selected.val();
+        var selectedName = selected.siblings().text();
+		console.log('selectedName: '+selectedName);
+		console.log('selectedValue: '+selectedValue+'\n');
+        //alert("Color: " + selectedName + "\r\nValue: " + selectedValue );
+    }
+}
+//STOP WITH THE EXPERIMENTAL STUFF HERE
+
+
+
+
+
 //Submit-button and timers.
 function hover() {
   $(".button").on("mouseenter", function() {
@@ -215,16 +239,12 @@ function hoverOff() {
 }
 function active() {
   $(".button").on("click", function() {
+	//amountChecked();
 	submitAnswers();
-	$('.radio').prop('checked',false);
-	$(this).hide('slow');
-	$('html, body').animate({scrollTop:200}, 800);//scroll speed
+	$('.radio').prop('checked',false); //remove all selected answers
+	$(this).hide('slow'); //hide the button
+	$('html, body').animate({scrollTop:200}, 800); //scroll to top, 200: pixels from top, 800: speed in ms.
 	showButton();
-  });
-}
-function forceActive() {//green submit button when it's called from 0 errors in checkCorrect.
-  $(".button").on("click", function() {
-	 return $(this).addClass("active");
   });
 }
 function showButton(){
@@ -233,7 +253,10 @@ function showButton(){
 	}, timerValue);
 }
 
-
 hover();
 hoverOff();
 active();
+
+
+
+
