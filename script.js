@@ -38,11 +38,11 @@ switch(getQuiz){
 		quiz=FSAEone;
 		break;
 	case 7:
-		get('bigLogo').innerHTML='FSAE Quiz 1';
+		get('bigLogo').innerHTML='FSAE Quiz 2';
 		quiz=FSAEtwo;
 		break;
 	case 8:
-		get('bigLogo').innerHTML='FSAE Quiz 1';
+		get('bigLogo').innerHTML='FSAE Quiz 3';
 		quiz=FSAEthree;
 		break;
 		
