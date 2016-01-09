@@ -199,9 +199,18 @@ setAnswers();
 var amountWrong;
 var currentQuestion;
 var currentAns;
+var ans_list;
 
 var timerValue = 30000;
 
+
+
+function shuffleEverything(){
+	newQuiz = shuffle(shuffledQuiz);
+	ans_list = [];
+	console.log('***Attempting reset***');
+	
+}
 
 
 
@@ -221,9 +230,6 @@ function amountChecked(){
     }
 }
 //STOP WITH THE EXPERIMENTAL STUFF HERE
-
-
-
 
 
 //Submit-button and timers.

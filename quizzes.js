@@ -28,7 +28,7 @@ var testOne = [
 	
 	{question: 'Hvilken trigonometrisk funksjon beskriver forholdet mellom den hosliggende kateten og hypotenusen i en rettvinklet trekant', answers:['Cosinus', 'Arccosinus', 'Tangens', 'Arctanges', 'Sinus', 'Arcsinus'], correct: 0},
 	
-	{question: 'Hva er uttrykket for effektiviteten til en Carnot-varmemaskin?', answers:['1-(T_h/T_c)', '1/(T_c/T_h)', '1-(T_c/T_h)', '(T_h/T_c)-1', '1/(T_h/T_c)'], correct: 0}
+	{question: 'Hva er uttrykket for effektiviteten til en Carnot-varmemaskin?', answers:['1-(T_c/T_h)', '1-(T_h/T_c)', '1/(T_c/T_h)', '(T_h/T_c)-1', '1/(T_h/T_c)'], correct: 0}
 ];
 
 //QUIZ 2
@@ -152,7 +152,7 @@ var testFive = [
 	
 	{question: 'Hva er spesielt med Akashi-Kaikyo-broen?', answers:['Den er verdens lengste hengebro', 'Den er verdens høyeste hengebro', 'Den er verdens bredeste hengebro', 'Den er verdens dyreste hengebro', 'Den raste bare noen dager etter åpningen', 'Den ble bygget for 500 år siden'], correct: 0},
 	
-	{question: 'Hef og Lisa giftet seg for 19 år siden. Da var Hef tre ganger så gammel som Lisa, men i dag kun dobbelt så gammel. Hva er aldersforskjellen mellom dem?', answers:['57', '19', '28', '38', '40'], correct: 0},
+	{question: 'Hef og Lisa giftet seg for 19 år siden. Da var Hef tre ganger så gammel som Lisa, men i dag kun dobbelt så gammel. Hva er aldersforskjellen mellom dem?', answers:['38', '57', '19', '28','40'], correct: 0},
 	
 	{question: '37!', answers:['13763753091226345046315979581580902400000001', '?', '38!!', '13763753091226345046315979581580902400000000', '43763753091226345046315979581580902400000300'], correct: 0},
 	
@@ -239,7 +239,7 @@ var FSAEthree = [
 
 	{question: 'Which of the following statements about the accumulator container is incorrect?', answers:['A sticker with an area of at least 700mm² and a red or black lightning bolt on yellow background or red lightning bolt on white background must be applied on every accumulator container', 'Each accumulator container must have a prominent indicator, such as an LED that will illuminate whenever a voltage greater than 60V DC is present at the vehicle side of the AIRs.', 'Every wire used in an accumulator container, no matter whether it is part of the GLV or tractive system, must be rated to the maximum tractive system voltage.', 'Every accumulator container must contain at least one fuse and at least two accumulator isolation relays.', 'The Accumulator containers and mounting systems are subject to approval of the Chief Technical Inspector or their representative'], correct: 0},
 
-	{question: 'What is correct about the grounding of the car?', answers:['All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 500 mOhms', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 5 Ohm to GLV system ground.', 'All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 300 mOhms', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 3 Ohm to GLV system ground.'], correct: 0},
+	{question: 'What is correct about the grounding of the car?', answers:['All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 300 mOhms', 'All electrically conductive parts of the vehicle  which are within 100mm of any tractive system or GLV component must have a resistance below 500 mOhms', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 5 Ohm to GLV system ground.', 'All parts of the vehicle which may become electrically conductive, must have a resistance below 3 Ohm to GLV system ground.'], correct: 0},
 
 	{question: 'Concerning the driver egress, what is incorrect?', answers:['Hands in forward-facing driving position on the connected steering wheel and wearing the required driver equipment.', 'All drivers must be able to exit to the side of the vehicle in no more than 5 seconds.', 'Egress time begins with the driver in the fully seated position', 'Egress time will stop when the driver has both feet on the pavement.'], correct: 0},
 
@@ -248,4 +248,38 @@ var FSAEthree = [
 	{question: 'Which of the following forms does not have to be submitted?', answers:['BLC', 'FMEA', 'ESF', 'IAD', 'SES'], correct: 0}
 ];
 
+
+var FSAEfive = [
+
+	{question: 'A main hoop tube has a outside diameter of 50 mm. What is the smallest allowed bending radius?', answers:['150 mm', '50 mm', '150 mm', '200 mm'], correct: 0},
+
+	{question: 'What is the maximum deformation of the anti-intrusion plate during testing of the impact attenuator?', answers:['25.4 mm', '24.5 mm', '26.5 mm', '27.3 mm'], correct: 0},
+
+	{question: 'Which statement is not correct?', answers:['The side impact structure for tube frame cars must be comprised of at least four tubular members located on each side of the driver while seated in the normal driving position.', 'The diagonal side impact structural member must connect the upper and lower side impact structural members forward of the main hoop and rearward of the front hoop.', 'The entire member must be between 300 and 350 mm above the ground if a 77 kg driver is in the default driving position.', 'The upper side impact structural member must connect the main hoop and the front hoop.'], correct: 0},
+
+	{question: 'In the default driving position, a driver cannot come into contact with any material which has a temperature (in celsius) above :', answers:['sixty', 'thirty-five', 'fourty-five', 'eighty'], correct: 0},
+
+	{question: 'A head restraint with an adjustment range of 20 cm is 15 cm wide. What height of the head restraint is not legal?', answers:['15 cm', '28 cm', '22.5 cm', '17.5 cm'], correct: 0},
+
+	{question: 'What does a yellow waving flag signalize? ', answers:['Great Danger, SLOW DOWN, evasive action is most likely required, BE PREPARED TO STOP, something has happened beyond the flag station, NO PASSING unless directed by the corner workers.', 'Danger, SLOW DOWN, be prepared to take evasive action, something has happened beyond the flag station. NO PASSING unless directed by the corner workers.', '- There is a slow moving vehicle on the course that is much slower than you are. Be prepared to approach it at a cautious rate.', 'Something is on the racing surface that should not be there. Be prepared for evasive maneuvers to avoid the situation.', '- Pull into the penalty box for a mechanical inspection of your car, something has been observed that needs closer inspection.', 'Pull into the penalty box for discussion with the Chief Marshall/Director of Operations or other official concerning an incident. A time penalty may be assessed for such incident.', 'Your session has been completed. Exit the course at the first opportunity'], correct: 0},
+
+	{question: 'What is correct about the GLV and TS?', answers:['The GLV system must not exceed 60VDC', 'None is correct', 'The GLV system must be powered up using a specified procedure if the tractive system is active', 'All components in the tractive system must have a minimal rating equal to or greater than the nominal tractive system voltage.', 'A failure causing the GLV system to shut down must trigger an deactivation of the tractive system in no more than 2 seconds.', 'High-voltage is definied as any voltage greater than 40VDC', 'The entire GLV and tractive system must be completely galvanically seperated from the chassis.'], correct: 0},
+
+	{question: 'The motor casing must have a thickness of at least.', answers:['3.0mm aluminum alloy 6061-T6', '3.0mm steel', '3.0mm steel', '2.7mm steel', '2.7mm aluminum alloy 6061-T6', '2.7mm aluminum alloy 6061-T6', '2.5mm steel', '2.5mm aluminum alloy 6061-T6'], correct: 0},
+
+	{question: 'What is defined as a violation of the 80kW maximum power rule?', answers:['A violation is defined as using more than 80kW or exceeding the specified voltage for more than 100ms continuously or using more than 80kW or exceeding the specified voltage, after a moving average over 500ms is applied.', 'A violation is defined as using more than 80kW or exceeding the specified voltage for more than 100ms continuously', 'A violation is defined as using more than 80kW or exceeding the specified voltage for more than 250ms continuously or using more than 80kW or exceeding the specified voltage, after a moving average over 1000ms is applied.', 'A violation is defined as using more than 80kW or exceeding the specified voltage for more than 100ms continuously or using more than 80kW or exceeding the specified voltage, after a moving average over 250ms is applied.', 'A violation is defined as using more than 80kW or exceeding the specified voltage, after a moving average over 500ms is applied.'], correct: 0},
+
+	{question: 'A team is using a distributed BMS system. Which of the following statements is not correct?', answers:['All voltage sense wires to the AMS must be protected by fusible link  wires or fuses.', 'Any GLV connection to the AMS must be galvanically isolated from the tractive system', 'The AMS must continuously measure the temperatures of critical points of the accumulator to keep the cells below the allowed maximum cell temperature  limit stated in the cell data sheet or below 60 degrees celsius, whichever is lower.', 'The AMS must continuously measure the cell voltage of every cell. If single cells are connected directly in parallel, only one measurement is needed.'], correct: 0},
+
+	{question: 'Which of the following statements about the High-Voltage Disconnect (HVD) are wrong?', answers:['Removing the HVD must disconnect both poles of the tractive system accumulator', 'No tools must be needed to open the HVD', 'The HVD must be clearly marked with HVD', 'Remote actuation of the HVD through a long handle, rope or wire is not acceptable.', 'The HVD must be 350mm above the ground  and easily visible when standing behind the vehicle.', 'It must be possible to disconnect the HVD without removing any bodywork'], correct: 0},
+
+	{question: 'What is the width of the skidpad track and the radius of the inner circle?', answers:['3,0m / 7,625m', '3,5m / 7,625m', '2,5m / 7,625m', '3,5m / 15,25m', '3,0m / 15,25m', '2,5m / 15,25m'], correct: 0},
+	
+	{question: 'What is the acceleration scoring formula?', answers:['', '', '', '', '', '', '', ''], correct: 0},
+	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
+	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
+	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
+	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
+
+];
 
