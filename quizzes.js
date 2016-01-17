@@ -359,11 +359,70 @@ var austriaTwo=[
 	
 	{question: 'Which of the following statements are not true?', answers:['All wet tires in a set have to have the same manufacturer, size and compound.', 'The tire type/rim type combination presented during Scrutineering must be the same during the whole event.', 'Any wheel mounting system that uses a single retaining nut must incorporate a device to retain the nut and the wheel in the event that the nut loosens.', 'The wheels of the car must be 203.2 mm or more in diameter.', 'The rims for dry tires and wet tires can be different.'], correct: 0},
 
-	{question: 'What statement is not true?', answers:['The brake pedal must be steel or aluminium.', 'The first 90% of the brake pedal travel may be used to regenerate brake energy without actuating the hydraulic brake system.', 'Each of the two hydraulic brake circuits must have its own fluid reserve.', 'A single brake acting on a limited-slip differential is acceptable.', '“Brake-by-wire” systems are prohibited.']},
+	{question: 'What statement is not true?', answers:['The brake pedal must be steel or aluminium.', 'The first 90% of the brake pedal travel may be used to regenerate brake energy without actuating the hydraulic brake system.', 'Each of the two hydraulic brake circuits must have its own fluid reserve.', 'A single brake acting on a limited-slip differential is acceptable.', '“Brake-by-wire” systems are prohibited.'],  correct: 0},
 	
 	
-	{question: 'The car number must appear on', answers:['the front and both sides of the vehicle', 'the front of the vehicle', 'the front of the vehicle and the endplates of the rear wing if applicable', 'both sides of the vehicle', 'the front and back of the vehicle']},
+	{question: 'The car number must appear on', answers:['the front and both sides of the vehicle', 'the front of the vehicle', 'the front of the vehicle and the endplates of the rear wing if applicable', 'both sides of the vehicle', 'the front and back of the vehicle'],  correct: 0}
+];
+
+
+
+var Regelquiz = [
+
+	{question: 'What force must the brake pedal be able to withstand?', answers:['2000 N', '3000 N', '4000 N', '5000 N']},
 	
+	{question: 'For a forward braced main hoop, the helmet clearance of a 95th percentile male from a line drawn between the main hoop and the front hoop must be atleast A and the helmet can max be B behind the main hoop:', answers:['A = 50.8 mm, B = 0 mm', 'A = 0 mm, B = 50.8 mm', 'A = 50.8 mm, B = 50.8 mm', 'A = 0 mm, B = 0 mm'],  correct: 0},
+	
+	{question: 'Which form of testing of the impact attenuater is not allowed?', answers:['Quasi static test', 'Drop down test', 'sledge test', 'Pendulum test'],  correct: 0},
+	
+	{question: 'Which statement is false:', answers:['Exceeding the maximum permitted voltage for more than 100 ms will result in disqualification from the entire dynamic event in which the violation occurred. Not having energy meter data available due to the team will be seen as a violation.', 'The maximum permitted voltage between any two electrical connection is 600 VDC', 'Not having energy meter data available due to the team will be seen as a violation', 'Regenerating energy is not allowed when the car is travelling 5 kph or over.'],  correct: 0},
+	
+	{question: 'Which statement is false:', answers:['The gas cylinder/tank can only be mounted to the frame or engine', 'The cylinder axis must not point at the driver', 'The gas cylinder must be insulated from any heat sources', 'The gass cylinder must be protectef rom rollover, collision from and direction or damage due to failure of rotating equipment', 'There must a pressure regulator mounted onto the cylinder or tank', 'The working gas in a compressed gas cylinders must be nonflammable'],  correct: 0},
+	
+	{question: 'A belt drive is 8.0 mm wide and made of steel. How wide must the scatter shield for the belt be?', answers:['24.0 mm', '12.8 mm', '14.0 mm', '26.8 mm'],  correct: 0},
+	
+	{question: 'What statement about the accumulator containers is not true:', answers:['Only 0.9mm thick steel or 2.3 mm thick aluminium can be used to construct covers and lids', 'Must be constructed of sheet/plate steel or aluminium', "Its floor and walls can be welded and/or fastened", 'Fasteners must be 6 mm Metric Grade 8.8 fasteners, or stronger, or be subsituted with two 5 mm (#12) bolts or three 4 mm (#10) bolts', 'An accumulator weighing more than 30 kg but less than 40 kg must use a minimum of 8 8 mm Metric Grade 8.8 fastners to attach it to the major structure of the chassis', 'A section weighing between 10 kg and 15 kg must have a minimum of 3 fasteners between any two vertical walls.', 'The accumulator structure must not fail under 40 g in the lateral direction'],  correct: 0},
+	
+	{question: 'Which statement is not a rule for the insulation of the tractive system', answers:['A shielded tractive system cables must always be securely anchored at least at each end so it can withstand a force of 200 N with causing strain to the end crimp.', 'Tractive system connections must be designed such that they use intentional current paths through conductors and should not rely on steel bolts as primary condctors. The connections cannot include compressible materials', 'Electrical connections in the path of the tractive system must be secured from unintentional loosening through the use of positive locking mechanisms that are suitable for high temperatures', 'The insulation materials chosen must be temperature rated at 90 degrees celsius or above', 'Tractive system components and containers must be protected from moisture from rain and puddles', 'All parts of the tractive system must be spaced such that it is not possible to touch any tractive system connections with a 100mm long, 6 mm diameter insulated test probe when the tractive system enclosures are in place.'],  correct: 0},
+	
+	{question: 'Given the circuit below. Req = 10 Ohm, Va=24V and Pc=16W. Find Ra, Rb and Rc', answers:['Ra = 6 , Rb = 3 , Rc = 1', 'Ra = 2, Rb = 7 , Rc = 1', 'Ra = 1 , Rb = 6 , Rc = 3', 'Ra = 6 , Rb = 1 , Rc = 3', 'Ra = 2 , Rb = 1 , Rc = 7', 'Ra = 7 , Rb = 2, Rc = 1'],  correct: 0},
+	
+	{question: 'Which is not an approved fire resistant material?', answers:['M5 fiber', 'PBI', 'Proban', 'Nomex', 'Indura', 'Carbon X'],  correct: 0},
+	
+	{question: "The purpose of this problem is to ensure that the team has basic knowledge in the field of electrical engineering. Given the circuit below (the transformer is an ideal transformer):									V2 is short circuited and Vs=24,67V AC RMS.The current I2 is measured to 15A, and the real power delivered from Vs is measured to 100W. V1/V2 = 24,13/12.7. What is R1?", answers:['1,604R', '1,605R', '1,606R', '1,602R', '1,601R', '1,600R', '1,599R', '1,6071R', '1,608R', '1,609R', '1,610R'],  correct: 0},
+	
+	{question: 'A car is weighed to be 205.4 kg before the design judging. Later on the the competition the car is weighed again and found to be 212.6 kg. How many points, if any, is the team penalized:', answers:['-60', '-70', '-80', '-30', '-20', 'none'],  correct: 0},
+	
+	{question: 'What is a not valid reason for disqualification from an event', answers:['Driving all 4  wheels off course two times during an autocross event', 'Driver failing to attend the pre-event drivers meeting', 'The driver showing inadequete control of the car during an endurance event', 'Not competing in an autocross heat window as it was cut short due to bad weather', 'Taking off/not wearing all driver’s equipment while the tractive system is on'],  correct: 0},
+	
+	{question: 'Given the low-pass filter below. A cut-off frequency of 1MHz is desired. The capacitor has a capacitance of 47nF. What must the inductance be?', answers:['21,2766 uH', '21,2765 uH', '2,12767 uH', '21,2768 uH', '2,12769 uH', '212,765 nH', '2,12766 nH', '2127,67 nH', '21,2768 nH', '21,2769 nH', '21,2765 pH', '21,2766 pH', '21,2767 pH', '21,2768 pH', '21,2769 pH'],  correct: 0}
+
+];
+
+var regelquizFour = [
+
+
+	{question: 'What is the min diameter of the jacking point?', answers:['25 mm', '21 mm', '29 mm', '40 mm'],  correct: 0},
+	
+	{question: 'To be allowed to use a monocoque teams have to prove that the monocoque side impact zone will be at least as strong as two steel tubes by testing a panel made of the same material as the monocoque. What size does this panel have to be?', answers:['275 x 500 mm', '250 x 450 mm', '200 x 400 mm', '175 x 350 mm'],  correct: 0},
+	
+	{question: 'What is the lowest perimeter shear strength allowed for the monocoque laminate with a diameter of 25mm?', answers:['7.5 kN', '8 kN', '6.5 kN', '4kN'],  correct: 0},
+	
+	{question: 'How far behind the back of the tires can the rearmost aerodynamically device be?', answers:['250 mm', '200 mm', '150 mm', '400 mm'],  correct: 0},
+	
+	{question: 'What is the minimum radius of a vertical edge of a wing?', answers:['3 mm', '4 mm', '5 mm', '6 mm'],  correct: 0},
+	
+	{question: 'Which of the following statements reagarding the Tractive System Active Light are true?', answers:['The TSAL must flash continously with a frequency between 2Hz and 5Hz', "It's not advisible to mount other lights in proximity to the TSAL", 'The TSAL must be visible by a person standing up to 3m away from the TSAL. The persons minimum eye height is 1.65m', 'The TSAL must be active when the voltage outside the accumulators exceeds 24V AC RMS', 'The TSAL must be orange'],  correct: 0},
+	
+	{question: 'Given is a battery cell with an end-of-charge voltage of 4.2V, an average internal dis-charge resistance of 0.5mR and an average internal charge resistance of 0.7mR. 360 of these cells are used to build an accumulator in 120s3p configuration. This accumulator is used to drive an Endurance that takes 1440s. The car re-generated energy during 18% of the lap time with an average total accumulator charging current of 3A. 9% of the lap time the accumulator was not charged or discharged. Energy was sourced to the motors for the rest of the lap time with an average discharge current of 30A. How much energy is wasted during Endurance due to the internal resistance of the cells? NOTE: No other losses have to be taken into account. Wherever possible, average values may be used and simplifications may be applied. For example the influence of the internal cell resistance on the accumulator voltage should be neglected.', answers:['18987 J', '18989 J', '18991 J', '18992 J', '18994 J', '18985 J', '18983 J', '18980 J', '18978 J'],  correct: 0},
+	
+	{question: "A team has designed an accumulator with the following specifications:														*Cells with an end-of-charge voltage of 4.0V and 8Ah capacity															 *144S2P arrangement of the cells divided into four modules (36S2P)																	 *Two accumulator isolation relays 																	*All wires used in the accumulator are rated for the maximum TS voltage																	From the information given above, would the accumulator be approved? (Assuming all aspects not mentioned are rule compliant)", answers:['No', 'Yes'],  correct: 0},
+	
+	{question: 'Assuming you have three torque encoders. Encoder one gives a torque request of 43.5%, encoder two gives a torque request of N/A and encoder three gives a torque request of 32.2%. If the car is rule compliant, will the tractive system be deactivated?', answers:['No', 'Yes', 'If the moon is half full and the water is below 10 degrees celsius, then maybe. It really depends on Gandalf the white.'],  correct: 0},
+	
+	{question: 'The rules allow to keep the Accumulator Isolation Relays(AIRs) closed for a certain time after the Shutdown Circuit was de-activated. It is assumed that both AIRs are connected in parallel to the Shutdown Circuit and that the electrical behaviour of each AIR can be simplified as a single resistance of 15R. Each AIR opens its contacts, if the current drops below 200mA. The nominal Shutdown Circuit Voltage is 13.8VDC. What is the maximum capacitance that may be connected in parallel to each AIR in order to not violate the rules? ', answers:['10.9mF', '11.0mF', '11.1mF', '10.8mF', '10.7mF', '10.6mF', '10.5mF'],  correct: 0},
+	
+
 	
 
 ];
