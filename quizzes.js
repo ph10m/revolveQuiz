@@ -275,11 +275,95 @@ var FSAEfive = [
 
 	{question: 'What is the width of the skidpad track and the radius of the inner circle?', answers:['3,0m / 7,625m', '3,5m / 7,625m', '2,5m / 7,625m', '3,5m / 15,25m', '3,0m / 15,25m', '2,5m / 15,25m'], correct: 0},
 	
-	{question: 'What is the acceleration scoring formula?', answers:['', '', '', '', '', '', '', ''], correct: 0},
-	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
-	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
-	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
-	{question: '', answers:['', '', '', '', '', '', '', ''], correct: 0},
+	{question: 'What is the acceleration scoring formula?', answers:['(71.5 x (Tmax/Tyour) -1) / ((Tmax/Tmin) -1) + 3.5', '(71.5 x (Tyour/Tmax) -1) / ((Tmax/Tmin) -1) + 3.5', '(71.5 x (Tmax/Tyour) -1) / ((Tmax/Tmin)) + 3.5', '(71.5 x (Tmax/Tyour) -1) / ((Tmax/Tmin) -1) + 2.5', '(71.5 x (Tmax/Tyour) -1) / ((Tmax/Tyour) -1) + 3.5', '(75 x (Tmax/Tyour) -1) / ((Tmax/Tyour) -1) + 3.5', '(71.5 x (Tmax/Tyour) -1) / ((Tmax/Tyour) -1) - 3.5'], correct: 0},
+	
+	{question: 'Which of the following items must be included in the cost rapport?', answers:['Data acquisition systems', 'Vanity finishes', 'Fire extinguisher', 'All sets of tires and wheels', 'Transponders, video and radio systems'], correct: 0},
+	
+	{question: 'What is the minimum sound level of the ready to drive sound?', answers:['70dBA', '72.5dBA', '75dBA', '77.5dBA', '80dBA'], correct: 0},
+	
+	{question: 'What is the minimum height the quick jack must be able to lift the driven wheels?', answers:['0,102m', '0,102dm', '12cm', '0,106dm', '0,01m'], correct: 0}
 
 ];
 
+
+var austriaOne=[
+
+	{question: 'Your team completes a sprint lap in a record 38 seconds. However, your agressive driving means that your team might incur some penalty points. You wipe out three cones, miss one slalom gate and go off track with two wheels for one second. What is the corrected elapsed time?', answers:['1 minute 4 seconds', '1 minute 24 seconds', '46 seconds', '38 seconds', '1 minute 44 seconds'], correct: 0},
+
+	{question: 'The point distribution for the Formula Student Austria competition is', answers:['675 points for dynamic events and 325 points for static events.', '700 points for dynamic events and 300 points for static events.', '750 points for dynamic events and 250 points for static events.', '725 points for dynamic events and 275 points for static events.', '575 points for dynamic events and 425 points for static events.'], correct: 0},
+
+	{question: 'Which of the following statements are not true?', answers:['Fire resistant underwear is strongly recommended, but not required.', 'Arm restraints can not be designed or manufactured by the team.', "All extinguishers must be equipped with a manufacturer installed pressure/charge gauge.", "The driver's suit must be fire resistant and certified to SFI 3-2A/5, FIA Standard 1986 or FIA Standard 8856-2000.", 'Helmet mounted cameras and helmet camera mounts are prohibited.'], correct: 0},
+
+	{question: 'The impact attenuator must be at least', answers:['100 mm high, 200 mm wide and 200 mm forward of the Front Bulkhead', '100 mm high, 100 mm wide and 200 mm forward of the Front Bulkhead', '200 mm high, 200 mm wide and 100 mm forward of the Front Bulkhead', '100 mm high, 100 mm wide and 100 mm forward of the Front Bulkhead', '200 mm high, 200 mm wide and 200 mm forward of the Front Bulkhead'], correct: 0},
+
+	{question: 'Which of the following statements are true?', answers:['Both the quick jack and the push bar are required by the rules to be brought to Scrutineering.', 'The push bar must be brought to Scrutineering, but the team is not required by the rules to bring the quick jack.', 'The quick jack must be brought to Scrutineering, but the team is not required by the rules to bring the push bar.', 'Neither the push bare nor the quick jack are required by the rules to be brought to Scrutineering.'], correct: 0},
+
+	{question: 'Due to a misunderstanding in your team, your Impact Attenuator Data Report was submitted 8 days after the deadline had passed. What penalty will your team receive?', answers:['70 penalty points', 'Your team will risk being un-registered from the event', '50 penalty points', '60 penalty points', '80 penalty points', 'No penalty will be given if the Impact Attenuator Data Report is received less than 10 days after the deadline has passed'], correct: 0},
+
+	{question: 'Your university wishes to take part in FSA 2015 with both an electrical vehicle and an IC vehicle. Which of the following about participating with two cars is explicitly stated in the rules?', answers:['A team member working on the IC car can not work on EV or vice versa.', 'The university has to send an application a minimum of 6 months in advance.', 'The university is encouraged to pick sequential car numbers (e.g. 14 and 15).', 'The two cars might not have the same frame or bodywork design.', 'The two cars must have the same car number.'], correct: 0},
+
+	{question: 'How many wildcard slots are available at FSA 2015?', answers:['3', '2', '1', '4', '5', 'None'], correct: 0},
+
+
+	{question: "Your team has 50 members. A one-way plane ticket to Austria is 250 Euros, a one-way bus ticket from the airport to the Red Bull Ring is 50 Euros per member and the camping is 15 Euros per night per member. What is the team's total travel costs to and from the competition, including the competition entry fee? Assume the same air and bus fares to and from the competition, and assume that your team arrive the day before the competition starts and leaves the morning after the competition concludes.", answers:['35 350', '34 600', '20 350', '34 750', '31 600', '36 100'], correct: 0},
+
+	{question: 'Consider two less-than-desirable options. In the first you are driving 30 km/h and crash head-on into another Formula Student car also going 30 km/h. In the second option you are driving 30 km/h and crash head-on into a stationary concrete wall. In neither case does your car bounce off the thing it hits, and the collision time is the same in both cases. Which of these two situations would result in the greatest impact force?', answers:['The force would be the same in both cases', 'Hitting the brick wall', 'Hitting the other car', 'Not enough information to answer', 'None of these are true'], correct: 0},
+
+	{question: 'If the length and diameter of a wire of circular cross section are both doubled, the resistance is', answers:['halved.', 'doubled.', 'unchanged.', 'increased fourfold.', 'None of these are true.'], correct: 0},
+
+	{question: 'Which of the following statements are not true?', answers:['The car must have a wheelbase smaller than 1525 mm.', 'The top 180 degrees of the wheels/tires must be unobstructed when viewed from vertically above the wheel.', 'The wheels/tires must be unobstructed when viewed from the side.', 'Teams submitting a Structural Requirements Certification Form (SRCF) do not have to submit a Structural Equivalency Spreadsheet (SES).'], correct: 0},
+
+	{question: 'In SES calculations, the steel used may not have a yield strength lower than', answers:['44.2 ksi', '36.6 ksi', '31.0 ksi', '48.4 ksi', '51.7 ksi'], correct: 0},
+
+	{question: 'The steel tubing used for the main roll hoop must have a minimum wall thickness of', answers:['1.6 mm', '1.0 mm', '1.4 mm', '1.5 mm', '2.0 mm'], correct: 0}
+
+];
+
+var austriaTwo=[
+
+	{question: 'Which of the following statements are not true?', answers:['Accumulators must be removed from the car for charging within a removable accumulator container and placed on the accumulator container hand cart for charging.', 'The inertia switch may be reset by the driver.', 'The ESO is the only person in the team that is allowed to declare the car electrically safe.', 'During the rain test the tractive system must be active.'], correct: 0},
+
+	
+	{question: 'Which of the following errors will not result in a penalty when submitting the Business Plan Executive Summary?', answers:["Submitting your team's BPES without following the file naming convention provided.", "Submitting your team's BPES without any technical highlights.", "Submitting your team's BPES without the vehicle cost.", "Submitting your team's BPES without the car number.", "Submitting your team's BPES without the team name.", "Submitting your team's BPES two days late.", "Submitting your team's BPES as a Microsoft Word document."], correct: 0},
+
+	
+	{question: 'What is the required noise level of the RTDS?', answers:['70dBA in a 2 meter radius of the car', '75dBA in the drivers seat', 'Not specified', '80dBA in a 2 meter radius of the car', '80dBA in a 1 meter radius of the car'], correct: 0},
+
+	
+	{question: 'Car A, B and C finish the endurance event using respectively 6, 5 and 3 kWH and finishing with a time of 946, 1280 and 1340 seconds. Car C has regenerated an average of 15% of the kinetic energy from the endurance event. What is true about the efficiency score of car C?', answers:['Car C has a lower efficiency score than Car A', 'Car C has a higher efficiency score than Car B', 'Car C has a higher efficiency score than Car A', 'Car C has a lower efficiency score than Car B', "There's not enough information to score Car C"], correct: 0},
+
+	
+	{question: 'You are standing on Bakke bridge watching the boats on Nidelva. You see a motorboat pass directly below you, traveling perpendicular to the bridge at a speed of 6 m/s. A person on the boat throws a ball at an initial speed of v0 and at an angle of 36.9 degrees from the vertical (Note: both v0 and the angle are with respect to the boat). Find the value of v0 necessary for the ball to travel straight up towards you.', answers:['36 km/h', '50 km/h', '23 km/h', '10 km/h'], correct: 0},
+
+	
+	{question: 'A student with a hacksaw can split a steel rod in four parts in 48 seconds. How many seconds does he need to split the steel rod in five parts?', answers:['1 minute and 4 seconds', '1 minute', '56 seconds', '1 minute and 12 seconds'], correct: 0},
+
+	
+	{question: 'When is an interlock / pilot signal not required for the tractive system connection?', answers:['An interlock / pilot signal is not required if the connection is made within a housing', 'An interlock / pilot signal is not required if tools are required to remove the tractive system connectors that go to the accumulator', 'An interlock / pilot signal is never strictly required, but it is considered good engineering practice', 'An interlock / pilot signal is always required'], correct: 0},
+
+	
+	{question: 'An accumulator that weighs 25 kg must be attached to the major structure of the car with a minimum of', answers:['6 fasteners', '8 fasteners', '10 fasteners', '5 fasteners', '4 fasteners'], correct: 0},
+
+	
+	{question: 'The accumulator has 194 lithium based cells. What is the minimum amount of cells that the BMS has to monitor the temperature of?', answers:['59', '194', '156', '39', '97'], correct: 0},
+
+	
+	{question: 'Your KERS is an engineering masterpiece, and recovers 47% of the energy in the endurance event. The energy use on the efficiency score sheet is 3,5125 kWh. How much energy did your KERS recover?', answers:['2,8611 kWh', '6,0875 kWh', '2,4337 kWh', '6,0977 kWh', '1,6509 kWH', '1,3551 kWH'], correct: 0},
+
+	
+	{question: 'What is not true about the TSAL?', answers:['The TSAL must flash continuously with a frequency between 2Hz and 6Hz.', "It must not be possible for the driver's helmet to contact the TSAL.", 'The TSAL must be red.', 'It is prohibited to mount other lights in proximity to the TSAL.', "The TSAL must be visible by a person standing up to 3m away from the TSAL. The person's minimum eye height is 1.6m.", 'If any official e.g. track marshal, technical inspector, etc. considers the TSAL to not be easily visible during track operations the team may not be allowed to compete in any dynamic event before the problem is solved.'], correct: 0},
+
+	
+	{question: 'Which of the following are you not required to bring to Scrutineering?', answers:['Team captain', 'Structural Equivalency Spreadsheet (SES)', 'Impact Attenuator Report', 'Drivers', 'Push bar', 'Fire extinguishers', 'Dry and wet tires', 'Vehicle'], correct: 0},
+
+	
+	{question: 'Which of the following statements are not true?', answers:['All wet tires in a set have to have the same manufacturer, size and compound.', 'The tire type/rim type combination presented during Scrutineering must be the same during the whole event.', 'Any wheel mounting system that uses a single retaining nut must incorporate a device to retain the nut and the wheel in the event that the nut loosens.', 'The wheels of the car must be 203.2 mm or more in diameter.', 'The rims for dry tires and wet tires can be different.'], correct: 0},
+
+	{question: 'What statement is not true?', answers:['The brake pedal must be steel or aluminium.', 'The first 90% of the brake pedal travel may be used to regenerate brake energy without actuating the hydraulic brake system.', 'Each of the two hydraulic brake circuits must have its own fluid reserve.', 'A single brake acting on a limited-slip differential is acceptable.', '“Brake-by-wire” systems are prohibited.']},
+	
+	
+	{question: 'The car number must appear on', answers:['the front and both sides of the vehicle', 'the front of the vehicle', 'the front of the vehicle and the endplates of the rear wing if applicable', 'both sides of the vehicle', 'the front and back of the vehicle']},
+	
+	
+
+];

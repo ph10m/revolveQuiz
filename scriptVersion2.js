@@ -1,7 +1,7 @@
-//var urlString = "url  ="+window.location.href;
-//fetchLink = urlString.substring(urlString.length+1, urlString.indexOf('#'));
-var getQuiz = Number(window.location.href.split("#")[1]);
-console.log(window.location.href);
+var urlString = "url  ="+window.location.href;
+fetchLink = urlString.substring(urlString.length+1, urlString.indexOf('#'));
+
+var getQuiz = Number(fetchLink[1]);
 console.log('Found quiz: '+getQuiz);
 //{question: '', answers:['', '', '', '', '', '', '', '', ''], correct: 0},
 
@@ -45,18 +45,7 @@ switch(getQuiz){
 		get('bigLogo').innerHTML='FSAE Quiz 3';
 		quiz=FSAEthree;
 		break;
-	case 9:
-		get('bigLogo').innerHTML='FSAE Quiz 5';
-		quiz=FSAEfive;
-		break;
-	case 10:
-		get('bigLogo').innerHTML='FS Austria Quiz 4';
-		quiz=austriaOne;
-		break;
-	case 11:
-		get('bigLogo').innerHTML='FS Austria Quiz 5';
-		quiz=austriaTwo;
-		break;
+		
 	default:
 		alert('Found no valid quizzes, setting default to Test One');
 		get('bigLogo').innerHTML='Error mode: Test Quiz 1';
@@ -202,8 +191,7 @@ for (i=0;i<quiz.length;i++){
 	//console.log('\nQ:'+qstArray[i]+'\nANS: '+ansArray[i]);
 	console.log('Original: '+qstArray[i]);
 }
-
-//Array for questions:
+//Array for shuffled questions (the ones you see):
 var shuffledQuiz = shuffle(quiz);
 var shuffleQstArray = [];
 for (i=0;i<shuffledQuiz.length;i++){
@@ -225,18 +213,9 @@ var timerValue = 30000;
 //EXPERIMENTAL STUFF HERE
 function amountChecked(){ //used for error-checking if all radios are selected
 	var selected = $(".radio:checked");
-    if(!selected.val()){
-		alert('No questions answered!');
-		return 0;
-	}
-	else if(selected.length<quiz.length){
-		alert('All questions must be answered!');
-		return 0;
-	}
-	else{
-		$('.radio').prop('checked',false);
-		return 1;
-	}
+    if(!selected.val()){alert('No questions answered!')}
+	else if(selected.length<quiz.length){alert('All questions must be answered!');}
+	else{$('.radio').prop('checked',false);}
 }
 //remove all selected answers
 //var selectedValue = selected.val(); //this gives 0_0, 1_3 etc.
@@ -261,14 +240,10 @@ function hoverOff() {
 }
 function active() {
   $(".button").on("click", function() {
-	//amountChecked();
-	var allAnswered = amountChecked();
-	if (allAnswered==1){
-		$(".button").hide('slow');
-		showButton();
-	} //hide the button}
+	amountChecked();
 	//submitAnswers();
 	//$('.radio').prop('checked',false); //remove all selected answers
+	$(this).hide('slow'); //hide the button
 	$('html, body').animate({scrollTop:200}, 1200); //scroll to top, 200: pixels from top, 800: speed in ms.
 	showButton();
   });

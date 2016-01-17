@@ -67,10 +67,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 1em;
 } */
 
+
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
+
 }
 
 .container {
@@ -120,6 +123,9 @@ header h2 span.heart {
 }
  */
  
+html{
+	overflow-y: scroll;
+}
 header h2 span.js {
   background-color: #000000;
 }
@@ -222,6 +228,7 @@ p {
   top: 0;
   z-index: 0;
   width: 100%;
+
 }
 .card-drop ul li a {
   border-top: none;
